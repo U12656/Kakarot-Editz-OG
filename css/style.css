@@ -348,6 +348,22 @@ body {
     grid-template-columns: 1fr;
   }
 }
+.shorts-feed{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+padding:20px;
+
+}
+
+.shorts-feed video{
+
+width:100%;
+height:auto;
+border-radius:10px;
+
+}
 
 
 
