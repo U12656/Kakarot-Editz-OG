@@ -379,14 +379,31 @@ grid-template-columns:1fr;
 
 aspect-ratio:9/16;
 object-fit:cover;
-
 }
 
 .leaderboard{
 
-max-width:400px;
+max-width:450px;
 margin:auto;
 text-align:center;
+
+}
+
+#fanList{
+
+list-style:none;
+padding:0;
+
+}
+
+#fanList li{
+
+background:#001100;
+color:lime;
+padding:10px;
+margin:8px;
+border-radius:8px;
+box-shadow:0 0 10px lime;
 
 }
 
@@ -403,21 +420,6 @@ padding:10px;
 
 }
 
-#fanList{
 
-list-style:none;
-padding:0;
-
-}
-
-#fanList li{
-
-background:#111;
-color:white;
-padding:10px;
-margin:5px;
-border-radius:8px;
-
-}
 
 
