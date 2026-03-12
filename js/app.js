@@ -274,55 +274,61 @@ document.getElementById("gokuImg").src=forms[form].img
 
 document.getElementById("formName").innerText=forms[form].name
 
-let fans = JSON.parse(localStorage.getItem("fans")) || []
+let fans = JSON.parse(localStorage.getItem("fans")) || [];
 
 function displayFans(){
 
-let list=document.getElementById("fanList")
+let list = document.getElementById("fanList");
 
-if(!list) return
+if(!list) return;
 
-list.innerHTML=""
+list.innerHTML="";
 
-fans.sort((a,b)=>b.power-a.power)
+fans.sort((a,b)=>b.power-a.power);
 
 fans.forEach(function(fan){
 
-let li=document.createElement("li")
+let li=document.createElement("li");
 
-li.innerText = fan.name + " — Power Level: " + fan.power
+li.textContent = fan.name + " — Power Level: " + fan.power;
 
-list.appendChild(li)
+list.appendChild(li);
 
-})
+});
 
 }
 
-function addFan(){
+function scanPower(){
 
-let input=document.getElementById("fanName")
+let input=document.getElementById("fanName");
 
-let name=input.value.trim()
+let name=input.value.trim();
 
-if(name==="") return
+if(name===""){
 
-let power=Math.floor(Math.random()*9000)+1000
+alert("Enter your name first!");
+
+return;
+
+}
+
+let power=Math.floor(Math.random()*9000)+1000;
 
 fans.push({
-
 name:name,
 power:power
+});
 
-})
+localStorage.setItem("fans",JSON.stringify(fans));
 
-localStorage.setItem("fans",JSON.stringify(fans))
+input.value="";
 
-input.value=""
-
-displayFans()
+displayFans();
 
 }
 
-displayFans()
+window.onload = displayFans;
 
-let fans = JSON.parse(localStorage.getItem("fans")) |
+  
+
+let fans = JSON.parse(localStorage
