@@ -262,3 +262,92 @@ body {
   height: 500px;
   border-radius: 10px;
 }
+
+.banner {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.section-card {
+  flex: 1 1 300px;
+  max-width: 400px;
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.shorts-feed {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.shorts-feed video {
+  width: 250px;
+  height: auto;
+}
+
+.scouter {
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.transform-box {
+  text-align: center;
+  padding: 20px;
+}
+
+.transform-box img {
+  width: 90%;
+  max-width: 300px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .banner-container img {
+    height: auto;
+  }
+
+  .section-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shorts-feed video {
+    width: 100%;
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
