@@ -375,4 +375,10 @@ grid-template-columns:1fr;
 
 }
 
+.shorts-feed video{
+
+aspect-ratio:9/16;
+object-fit:cover;
+
+}
 
