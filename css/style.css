@@ -382,3 +382,42 @@ object-fit:cover;
 
 }
 
+.leaderboard{
+
+max-width:400px;
+margin:auto;
+text-align:center;
+
+}
+
+.leaderboard input{
+
+padding:10px;
+width:70%;
+
+}
+
+.leaderboard button{
+
+padding:10px;
+
+}
+
+#fanList{
+
+list-style:none;
+padding:0;
+
+}
+
+#fanList li{
+
+background:#111;
+color:white;
+padding:10px;
+margin:5px;
+border-radius:8px;
+
+}
+
+
