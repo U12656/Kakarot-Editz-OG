@@ -274,8 +274,6 @@ document.getElementById("gokuImg").src=forms[form].img
 
 document.getElementById("formName").innerText=forms[form].name
 
-
-
 let fans = JSON.parse(localStorage.getItem("fans")) || []
 
 function displayFans(){
@@ -286,11 +284,13 @@ if(!list) return
 
 list.innerHTML=""
 
-fans.forEach(function(name){
+fans.sort((a,b)=>b.power-a.power)
+
+fans.forEach(function(fan){
 
 let li=document.createElement("li")
 
-li.innerText=name
+li.innerText = fan.name + " — Power Level: " + fan.power
 
 list.appendChild(li)
 
@@ -306,7 +306,14 @@ let name=input.value.trim()
 
 if(name==="") return
 
-fans.push(name)
+let power=Math.floor(Math.random()*9000)+1000
+
+fans.push({
+
+name:name,
+power:power
+
+})
 
 localStorage.setItem("fans",JSON.stringify(fans))
 
@@ -317,7 +324,5 @@ displayFans()
 }
 
 displayFans()
-  
 
-
-}
+let fans = JSON.parse(localStorage.getItem("fans")) |
