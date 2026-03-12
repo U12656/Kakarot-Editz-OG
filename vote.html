@@ -1,19 +1,18 @@
 <h2>Vote Next Edit</h2>
+<form action="https://formsubmit.co/tanmaygupta818@gmail.com" method="POST">
+  <select name="vote">
+    <option value="Goku vs Jiren">Goku vs Jiren</option>
+    <option value="Vegeta Ultra Ego">Vegeta Ultra Ego</option>
+    <option value="Gohan Beast">Gohan Beast</option>
+    <option value="Broly Rage Edit">Broly Rage Edit</option>
+  </select>
 
-<label>
-  <input type="radio" name="vote" value="Goku UI" /> Goku Ultra Instinct
-</label>
+  <input type="hidden" name="_captcha" value="false" />
 
-<label>
-  <input type="radio" name="vote" value="Vegeta UE" /> Vegeta Ultra Ego
-</label>
+  <input type="hidden" name="_subject" value="New Vote" />
 
-<label>
-  <input type="radio" name="vote" value="Gohan Beast" /> Gohan Beast
-</label>
-
-<button onclick="vote()">Vote</button>
-
-<p id="result"></p>
+  <button type="submit">Submit Vote</button>
+</form>
 
 <script src="js/app.js"></script>
+
