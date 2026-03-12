@@ -274,4 +274,50 @@ document.getElementById("gokuImg").src=forms[form].img
 
 document.getElementById("formName").innerText=forms[form].name
 
+
+
+let fans = JSON.parse(localStorage.getItem("fans")) || []
+
+function displayFans(){
+
+let list=document.getElementById("fanList")
+
+if(!list) return
+
+list.innerHTML=""
+
+fans.forEach(function(name){
+
+let li=document.createElement("li")
+
+li.innerText=name
+
+list.appendChild(li)
+
+})
+
+}
+
+function addFan(){
+
+let input=document.getElementById("fanName")
+
+let name=input.value.trim()
+
+if(name==="") return
+
+fans.push(name)
+
+localStorage.setItem("fans",JSON.stringify(fans))
+
+input.value=""
+
+displayFans()
+
+}
+
+displayFans()
+  
+
+
 }
