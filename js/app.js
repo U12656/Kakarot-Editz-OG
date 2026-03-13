@@ -15,6 +15,7 @@ board.appendChild(li)
 
 }
 
+
 // voting
 
 function vote(){
@@ -34,6 +35,7 @@ document.getElementById("result").innerText=
 
 }
 
+
 // chat system
 
 function sendChat(){
@@ -49,42 +51,10 @@ li.innerText=user+": "+msg
 
 chatbox.appendChild(li)
 
-// save points
-
-let points=localStorage.getItem(user)||0
-
-points++
-
-localStorage.setItem(user,points)
-
 }
 
-// leaderboard
 
-window.onload=function(){
-
-let board=document.getElementById("leaderboard")
-
-if(board){
-
-for(let i=0;i<localStorage.length;i++){
-
-let name=localStorage.key(i)
-
-let score=localStorage.getItem(name)
-
-let li=document.createElement("li")
-
-li.innerText=name+" : "+score+" points"
-
-board.appendChild(li)
-
-}
-
-}
-
-}
-
+// search videos
 
 function searchVideos(){
 
@@ -109,6 +79,7 @@ v.style.display="none"
 }
 
 
+// small scroll animation
 
 window.addEventListener("scroll",()=>{
 
@@ -123,6 +94,7 @@ card.style.transform="translateY(-5px)"
 })
 
 
+// power scanner
 
 function scanPower(){
 
@@ -229,6 +201,9 @@ document.getElementById("power").innerText="No reading detected"
 
 }
 
+
+// saiyan transform
+
 let form=0
 
 let forms=[
@@ -271,46 +246,61 @@ form=0
 }
 
 document.getElementById("gokuImg").src=forms[form].img
+document.getElementById("formName").innerText=forms[form].name
 
-document.getElementById("formName").innerText=forms[form].name}
+}
 
+
+// NEW LEADERBOARD SYSTEM (names + optional channel)
 
 let fans = JSON.parse(localStorage.getItem("fans")) || [];
 
 function addFan(){
 
 const name = document.getElementById("fanName").value.trim();
-const points = document.getElementById("fanPoints").value;
+const channel = document.getElementById("fanChannel").value.trim();
 
-if(!name || !points){
-alert("Enter name and points");
+if(!name){
+alert("Enter your name");
 return;
 }
 
 fans.push({
 name:name,
-points:Number(points)
+channel:channel
 });
 
 localStorage.setItem("fans", JSON.stringify(fans));
 
 showFans();
 
+document.getElementById("fanName").value="";
+document.getElementById("fanChannel").value="";
+
 }
+
 
 function showFans(){
 
-const list = document.getElementById("fanList");
+const list=document.getElementById("fanList");
+
+if(!list) return;
 
 list.innerHTML="";
 
-fans.sort((a,b)=>b.points-a.points);
+fans.forEach(function(fan){
 
-fans.forEach(fan => {
+let li=document.createElement("li");
 
-const li=document.createElement("li");
+if(fan.channel){
 
-li.textContent = fan.name + " - " + fan.points + " points";
+li.textContent = fan.name + " (Channel: " + fan.channel + ")";
+
+}else{
+
+li.textContent = fan.name;
+
+}
 
 list.appendChild(li);
 
@@ -319,8 +309,3 @@ list.appendChild(li);
 }
 
 document.addEventListener("DOMContentLoaded", showFans);
-
-
-
-
-
