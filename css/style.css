@@ -874,3 +874,58 @@ MOBILE RESPONSIVE
     width: 100%;
   }
 }
+
+.community-section {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/community-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.vote-section {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/vote-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.chat-section {
+  background:
+    linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)),
+    url("../images/chat-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.leaderboard {
+  background:
+    linear-gradient(rgba(0, 30, 0, 0.9), rgba(0, 30, 0, 0.9)),
+    url("../images/scanner-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.community-section,
+.vote-section,
+.chat-section {
+  padding: 40px;
+  min-height: 300px;
+}
+
+.section-image {
+  display: block;
+  margin: 20px auto;
+  max-width: 400px;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px orange;
+}
+
+
+
