@@ -272,7 +272,7 @@ form=0
 
 document.getElementById("gokuImg").src=forms[form].img
 
-document.getElementById("formName").innerText=forms[form].name
+document.getElementById("formName").innerText=forms[form].name}
 
 let fans = JSON.parse(localStorage.getItem("fans")) || [];
 
@@ -332,3 +332,4 @@ window.onload = displayFans;
   
 
 let fans = JSON.parse(localStorage
+
