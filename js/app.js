@@ -274,23 +274,43 @@ document.getElementById("gokuImg").src=forms[form].img
 
 document.getElementById("formName").innerText=forms[form].name}
 
+
 let fans = JSON.parse(localStorage.getItem("fans")) || [];
 
-function displayFans(){
+function addFan(){
 
-let list = document.getElementById("fanList");
+const name = document.getElementById("fanName").value.trim();
+const points = document.getElementById("fanPoints").value;
 
-if(!list) return;
+if(!name || !points){
+alert("Enter name and points");
+return;
+}
+
+fans.push({
+name:name,
+points:Number(points)
+});
+
+localStorage.setItem("fans", JSON.stringify(fans));
+
+showFans();
+
+}
+
+function showFans(){
+
+const list = document.getElementById("fanList");
 
 list.innerHTML="";
 
-fans.sort((a,b)=>b.power-a.power);
+fans.sort((a,b)=>b.points-a.points);
 
-fans.forEach(function(fan){
+fans.forEach(fan => {
 
-let li=document.createElement("li");
+const li=document.createElement("li");
 
-li.textContent = fan.name + " — Power Level: " + fan.power;
+li.textContent = fan.name + " - " + fan.points + " points";
 
 list.appendChild(li);
 
@@ -298,38 +318,9 @@ list.appendChild(li);
 
 }
 
-function scanPower(){
+document.addEventListener("DOMContentLoaded", showFans);
 
-let input=document.getElementById("fanName");
 
-let name=input.value.trim();
 
-if(name===""){
 
-alert("Enter your name first!");
-
-return;
-
-}
-
-let power=Math.floor(Math.random()*9000)+1000;
-
-fans.push({
-name:name,
-power:power
-});
-
-localStorage.setItem("fans",JSON.stringify(fans));
-
-input.value="";
-
-displayFans();
-
-}
-
-window.onload = displayFans;
-
-  
-
-let fans = JSON.parse(localStorage
 
