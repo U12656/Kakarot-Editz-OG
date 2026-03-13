@@ -510,6 +510,194 @@ opacity:0.2;
 }
 
 
+.dragon-container {
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  gap: 20px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.dragonball {
+  width: 100px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dragonball:hover {
+  transform: scale(1.2);
+}
+
+#shenronArea {
+  display: none;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#shenron {
+  width: 400px;
+  animation: shenronRise 3s ease-out;
+
+  filter: drop-shadow(0 0 40px lime);
+}
+
+@keyframes shenronRise {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* lightning flash */
+
+body.flash {
+  background: white;
+  transition: 0.1s;
+}
+
+.dragon-game {
+  background: black;
+  text-align: center;
+  padding: 60px;
+}
+
+.dragon-container {
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.dragonball {
+  width: 100px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dragonball:hover {
+  transform: scale(1.2);
+}
+
+#shenronArea {
+  display: none;
+  margin-top: 40px;
+}
+
+#shenron {
+  width: 400px;
+  animation: shenronRise 3s ease-out;
+  filter: drop-shadow(0 0 40px lime);
+}
+
+@keyframes shenronRise {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* lightning flash */
+
+.flash {
+  background: white;
+  transition: 0.1s;
+}
+
+.dragon-container {
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.dragonball {
+  width: 90px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dragonball:hover {
+  transform: scale(1.2);
+}
+
+#shenronArea {
+  display: none;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#shenron {
+  width: 350px;
+  filter: drop-shadow(0 0 30px lime);
+}
+
+#shenronArea {
+  display: none;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#gameArea {
+  position: relative;
+  height: 500px;
+  background: black;
+  overflow: hidden;
+}
+
+.dragonball {
+  width: 90px;
+  position: absolute;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dragonball:hover {
+  transform: scale(1.2);
+}
+
+#shenronArea {
+  display: none;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#shenron {
+  width: 450px;
+  animation: rise 3s ease-out;
+  filter: drop-shadow(0 0 40px lime);
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(300px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* lightning flash */
+
+.flash {
+  background: white;
+  transition: 0.2s;
+}
+
 
 
 
