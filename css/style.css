@@ -700,5 +700,232 @@ body.flash {
 
 
 
+/* =========================
+GLOBAL RESPONSIVE SETTINGS
+========================= */
+
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:black;
+color:white;
+}
+
+/* Section layout */
+
+section{
+padding:40px 20px;
+text-align:center;
+}
+
+/* Card layout used on homepage */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:#111;
+padding:20px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+/* Buttons */
+
+button{
+padding:10px 20px;
+border:none;
+background:orange;
+color:black;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:gold;
+}
+
+/* Inputs */
+
+input, textarea{
+width:90%;
+max-width:400px;
+padding:10px;
+margin:10px;
+border-radius:6px;
+border:none;
+}
+
+/* =========================
+COMMUNITY / CHAT SECTIONS
+========================= */
+
+.community-box,
+.chat-box{
+
+max-width:600px;
+margin:auto;
+background:#111;
+padding:20px;
+border-radius:10px;
+
+}
+
+/* =========================
+VOTE NEXT EDIT
+========================= */
+
+.vote-container{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+max-width:800px;
+margin:auto;
+
+}
+
+/* =========================
+LEADERBOARD
+========================= */
+
+.leaderboard{
+
+max-width:500px;
+margin:auto;
+background:#111;
+padding:20px;
+border-radius:10px;
+
+}
+
+#fanList{
+
+list-style:none;
+padding:0;
+
+}
+
+#fanList li{
+
+background:#222;
+margin:8px;
+padding:10px;
+border-radius:6px;
+
+}
+
+/* =========================
+POWER SCANNER
+========================= */
+
+.scanner-box{
+
+max-width:500px;
+margin:auto;
+background:#021;
+padding:20px;
+border-radius:10px;
+
+}
+
+/* =========================
+SAIYAN TRANSFORM
+========================= */
+
+.transform-box{
+
+text-align:center;
+}
+
+.transform-box img{
+
+max-width:250px;
+width:80%;
+transition:0.4s;
+
+}
+
+/* =========================
+SHENRON GAME
+========================= */
+
+#gameArea{
+
+position:relative;
+height:450px;
+max-width:800px;
+margin:auto;
+background:black;
+overflow:hidden;
+
+}
+
+.dragonball{
+
+width:70px;
+position:absolute;
+cursor:pointer;
+
+}
+
+#shenron{
+
+max-width:450px;
+width:90%;
+
+}
+
+/* =========================
+MOBILE RESPONSIVE
+========================= */
+
+@media (max-width:768px){
+
+h1{
+font-size:26px;
+}
+
+.cards{
+grid-template-columns:1fr 1fr;
+}
+
+.dragonball{
+width:55px;
+}
+
+#shenron{
+width:90%;
+}
+
+}
+
+@media (max-width:480px){
+
+.cards{
+grid-template-columns:1fr;
+}
+
+section{
+padding:30px 10px;
+}
+
+input, textarea{
+width:100%;
+}
+
+}
 
 
