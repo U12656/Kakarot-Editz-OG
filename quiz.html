@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Dragon Ball Quiz</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <h1 style="text-align: center">🧠 Dragon Ball Quiz</h1>
+
+    <div class="quiz-box">
+      <form id="quizForm">
+        <!-- Question 1 -->
+
+        <h3>1. Who is Goku's rival?</h3>
+
+        <label><input type="radio" name="q1" value="0" /> Frieza</label><br />
+        <label><input type="radio" name="q1" value="1" /> Vegeta</label><br />
+        <label><input type="radio" name="q1" value="0" /> Piccolo</label>
+
+        <br /><br />
+
+        <!-- Question 2 -->
+
+        <h3>2. Who defeated Cell?</h3>
+
+        <label><input type="radio" name="q2" value="0" /> Goku</label><br />
+        <label><input type="radio" name="q2" value="1" /> Gohan</label><br />
+        <label><input type="radio" name="q2" value="0" /> Vegeta</label>
+
+        <br /><br />
+
+        <!-- Question 3 -->
+
+        <h3>3. What is Goku's strongest form?</h3>
+
+        <label><input type="radio" name="q3" value="0" /> Super Saiyan </label
+        ><br />
+        <label><input type="radio" name="q3" value="1" /> Ultra Instinct</label
+        ><br />
+        <label><input type="radio" name="q3" value="0" /> Super Saiyan 3</label>
+
+        <br /><br />
+
+        <!-- Question 4 -->
+
+        <h3>4. Who is the God of Destruction of Universe 7?</h3>
+
+        <label><input type="radio" name="q4" value="1" /> Beerus</label><br />
+        <label><input type="radio" name="q4" value="0" /> Whis</label><br />
+        <label><input type="radio" name="q4" value="0" /> Zeno</label>
+
+        <br /><br />
+
+        <!-- Question 5 -->
+
+        <h3>5. Who defeated Majin Buu?</h3>
+
+        <label><input type="radio" name="q5" value="1" /> Goku</label><br />
+        <label><input type="radio" name="q5" value="0" /> Vegeta</label><br />
+        <label><input type="radio" name="q5" value="0" /> Gohan</label>
+
+        <br /><br />
+
+        <button type="button" onclick="checkQuiz()">Submit Quiz</button>
+      </form>
+
+      <h2 id="result"></h2>
+    </div>
+
+    <script src="js/quiz.js"></script>
+  </body>
+</html>
