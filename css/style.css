@@ -984,6 +984,39 @@ MOBILE RESPONSIVE
   font-size: 14px;
 }
 
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.timeline-card {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.timeline-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px orange;
+}
+
+.timeline-card img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.timeline-card p {
+  color: #ccc;
+  font-size: 14px;
+}
 
 
 
