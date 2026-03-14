@@ -914,6 +914,45 @@ MOBILE RESPONSIVE
   border-radius: 10px;
   box-shadow: 0 0 20px orange;
 }
+.battle-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+.battle-card {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.battle-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px orange;
+}
+
+.battle-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.battle-card video {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.battle-card p {
+  color: #ccc;
+  font-size: 14px;
+}
+
+
+
 
 
 
