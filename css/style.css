@@ -528,10 +528,7 @@ body {
 
 /* lightning flash */
 
-body.flash {
-  background: white;
-  transition: 0.1s;
-}
+
 
 .dragon-game {
   background: black;
