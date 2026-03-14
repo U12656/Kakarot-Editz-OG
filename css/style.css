@@ -579,10 +579,7 @@ body {
 
 /* lightning flash */
 
-.flash {
-  background: white;
-  transition: 0.1s;
-}
+
 
 .dragon-container {
   display: grid;
@@ -661,12 +658,6 @@ body {
   }
 }
 
-/* lightning flash */
-
-.flash {
-  background: white;
-  transition: 0.2s;
-}
 
 /* =========================
 GLOBAL RESPONSIVE SETTINGS
