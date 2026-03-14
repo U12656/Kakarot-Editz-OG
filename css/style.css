@@ -1018,6 +1018,28 @@ MOBILE RESPONSIVE
   font-size: 14px;
 }
 
+.quiz-box{
+max-width:600px;
+margin:auto;
+background:#111;
+padding:30px;
+border-radius:10px;
+box-shadow:0 0 20px orange;
+}
+
+.quiz-box h3{
+color:orange;
+}
+
+.quiz-box label{
+display:block;
+margin:5px 0;
+}
+
+.quiz-box button{
+margin-top:20px;
+}
+
 
 
 
