@@ -1,7 +1,11 @@
+
 document.addEventListener("DOMContentLoaded", function(){
 
 const gameArea = document.getElementById("gameArea");
 let collected = 0;
+
+/* thunder sound */
+const thunder = new Audio("sounds/thunder.mp3");
 
 for(let i=1;i<=7;i++){
 
@@ -31,11 +35,13 @@ gameArea.appendChild(ball);
 
 }
 
-});
-
 function summonShenron(){
 
 document.body.classList.add("flash");
+
+/* play thunder */
+thunder.currentTime = 0;
+thunder.play();
 
 setTimeout(function(){
 
@@ -51,3 +57,4 @@ shenronArea.style.display = "block";
 
 }
 
+});
