@@ -1212,7 +1212,37 @@ color:#aaa;
 
 
 
+/* Villain Database */
 
+.villain-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:40px;
+}
+
+.villain-card{
+background:#111;
+padding:15px;
+border-radius:10px;
+text-align:center;
+transition:0.3s;
+}
+
+.villain-card img{
+width:100%;
+border-radius:8px;
+}
+
+.villain-card:hover{
+transform:scale(1.05);
+box-shadow:0 0 20px red;
+}
+
+.villain-card h3{
+color:red;
+margin:10px 0;
+}
 
 
 
