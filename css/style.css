@@ -43,12 +43,36 @@ body {
   border-radius: 6px;
 }
 
-.features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 30px;
+
+/* FEATURES GRID */
+
+.features{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:20px;
+padding:30px;
 }
+
+/* TABLET */
+
+@media (max-width:1000px){
+
+.features{
+grid-template-columns:repeat(3,1fr);
+}
+
+}
+
+/* MOBILE */
+
+@media (max-width:600px){
+
+.features{
+grid-template-columns:1fr;
+}
+
+}
+
 
 .feature {
   background: #151515;
