@@ -1,3 +1,5 @@
+
+
 // community board
 
 function postMessage(){
@@ -265,6 +267,13 @@ alert("Enter your name");
 return;
 }
 
+/* RESET AFTER 100 FANS */
+if(fans.length >= 100){
+fans = [];
+localStorage.removeItem("fans");
+alert("Leaderboard reset! New tournament begins!");
+}
+
 fans.push({
 name:name,
 channel:channel
@@ -309,3 +318,7 @@ list.appendChild(li);
 }
 
 document.addEventListener("DOMContentLoaded", showFans);
+
+
+
+
