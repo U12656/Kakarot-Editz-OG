@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Dragon Ball News</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <h1 style="text-align: center">📰 Dragon Ball News</h1>
+
+    <div class="news-box">
+      <h3>Add News Update</h3>
+
+      <input id="newsTitle" placeholder="News Title" />
+
+      <textarea id="newsText" placeholder="Write the news update"></textarea>
+
+      <input
+        id="newsImage"
+        placeholder="Image file name (example: news1.jpg)"
+      />
+
+      <button onclick="addNews()">Post News</button>
+    </div>
+
+    <h2 style="text-align: center">Latest Updates</h2>
+
+    <div id="newsList" class="news-list"></div>
+
+    <script src="js/news.js"></script>
+  </body>
+</html>
