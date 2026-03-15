@@ -1170,3 +1170,49 @@ border-radius:8px;
 margin-bottom:10px;
 }
 
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+.footer{
+background:#111;
+color:white;
+text-align:center;
+padding:30px;
+border-top:3px solid orange;
+margin-top:40px;
+}
+
+.social-links{
+margin:15px 0;
+}
+
+.social-links a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-size:18px;
+transition:0.3s;
+}
+
+.social-links a:hover{
+color:orange;
+}
+
+.footer-text{
+font-size:14px;
+color:#aaa;
+}
+
+
+
+
+
+
+
